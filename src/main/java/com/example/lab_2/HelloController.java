@@ -147,11 +147,6 @@ public class HelloController {
 
         int numberOfSides;
         String str = value1.getText();
-//        if (isNumeric(str))
-//            numberOfSides = Integer.parseInt(str);
-//        else
-//            numberOfSides = nameAndNames.get(str);
-
         try {
             numberOfSides = Integer.parseInt(str);
 
