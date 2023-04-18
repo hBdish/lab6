@@ -4,20 +4,17 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<SplitPane dividerPositions="0.5681089743589743" maxHeight="1000.0" maxWidth="800.0" minHeight="800.0" minWidth="600.0" prefHeight="800.0" prefWidth="739.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab_2.HelloController">
-   <items>
-      <Canvas fx:id="canvas" height="875.0" onMousePressed="#showCoordinate" onMouseReleased="#calculateSize" width="595.0" />
-      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab_2.HelloController">
+   <children>
+      <VBox alignment="CENTER" layoutX="270.0" layoutY="28.0" prefHeight="84.0" prefWidth="134.0">
          <children>
-            <Label fx:id="label1" layoutX="10.0" layoutY="350.0" text="Длина, Ширина" />
-            <Label fx:id="label" text="Точка" />
-            <ColorPicker fx:id="colorPicker" />
-            <Button fx:id="button1" mnemonicParsing="false" onAction="#drawRectangle" text="Прямоугольник" />
-            <Button fx:id="button2" mnemonicParsing="false" onAction="#drawCircle" text="Кружок" />
             <Label text="Число сторон" />
             <TextField fx:id="value1" />
             <Button fx:id="drawButton" mnemonicParsing="false" onAction="#drawShape" text="Отрисовать" />
          </children>
       </VBox>
-   </items>
-</SplitPane>
+      <Canvas fx:id="canvas" height="518.0" layoutY="152.0" width="595.0" />
+      <ListView fx:id="list" onMouseClicked="#addShape" prefHeight="140.0" prefWidth="200.0" />
+      <ColorPicker layoutX="445.0" layoutY="51.0" fx:id="color" />
+   </children>
+</AnchorPane>

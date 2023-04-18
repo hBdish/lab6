@@ -2,51 +2,35 @@
 
 title __LAB_2's Class Diagram__\n
 
-  namespace  {
+
     namespace om.example.lab_2 {
       class com.example.lab_2.HelloApplication {
           {static} + main()
           + start()
       }
     }
-  }
+
   
 
-  namespace  {
+
     namespace om.example.lab_2 {
       class com.example.lab_2.HelloController {
-          + buttonDraw : Button
-          - button1 : Button
-          - button2 : Button
-          - button3 : Button
+          + color : ColorPicker
+          + figs : ObservableList<MyShape>
+          + list : ListView
           - canvas : Canvas
-          - colorPicker : ColorPicker
-          - distance_X : double
-          - distance_Y : double
-          - drawButton : Button
-          - flag_circle : Boolean
-          - flag_rect : Boolean
-          - label : Label
-          - label1 : Label
+          - gr : GraphicsContext
           - value1 : TextField
-          - welcomeText : Label
-          - x : double
-          - y : double
-          + calculateSize()
-          + drawCircle()
-          + drawRectangle()
+          + addShape()
           + drawShape()
-          + drawTriangle()
-          + draw_circle()
-          + draw_rect()
-          + showCoordinate()
-          # drawButton()
+          + initialize()
       }
     }
-  }
+
   
 
   com.example.lab_2.HelloApplication -up-|> javafx.application.Application
+  com.example.lab_2.HelloController .up.|> javafx.fxml.Initializable
 
 
 right footer

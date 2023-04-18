@@ -27,4 +27,8 @@ public class MyTriangle extends MyShape {
         gr.setFill(this.color);
         gr.fillPolygon(xPoints, yPoints, 3);
     }
+    @Override
+    public String toString() {
+        return "Треугольник";
+    }
 }

@@ -44,6 +44,10 @@ public class MyPentagon extends MyShape{
         gr.fill();
         // End the Path
         gr.closePath();
+    }
 
+    @Override
+    public String toString() {
+        return "Пятиугольник";
     }
 }

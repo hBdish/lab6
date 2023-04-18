@@ -38,5 +38,9 @@ public class MyRectangle extends MyShape{
 
     }
 
+    @Override
+    public String toString() {
+        return "Прямоуг";
+    }
 }
 

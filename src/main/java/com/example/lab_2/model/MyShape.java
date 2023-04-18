@@ -16,16 +16,15 @@ public abstract class MyShape  {
     // конструктор
     public MyShape(Color color, double x, double y, String name) {
         this.name = name;
-      this.x = x;
-      this.y = y;
-      this.color = color;
+        this.x = x;
+        this.y = y;
+        this.color = color;
     }
-
     // реализация методов
 
     public void setColor(Color color) {
-
-        this.color=color;     }
+        this.color=color;
+    }
 
     public Color getColor() {
         return color;
@@ -50,5 +49,6 @@ public abstract class MyShape  {
     public void setY(double y) {
         this.y = y;
     }
+
 }
 

@@ -27,4 +27,9 @@ public class MyCircle extends MyShape{
         gr.setFill(color);
         gr.fillOval(this.x, this.y, 50, 50);
     }
+
+    @Override
+    public String toString() {
+        return "Круг";
+    }
 }

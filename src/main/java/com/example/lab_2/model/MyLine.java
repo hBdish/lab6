@@ -22,18 +22,18 @@ public class MyLine extends MyShape{
 
 
     public MyLine() {
-
-        // calling Shape constructor
-
         super(Color.RED, 104, 140, "Линия");
-
         x_end = 300;
-
         y_end = 300;
     }
     @Override
     public void draw(GraphicsContext gr) {
         gr.setFill(this.color);
         gr.strokeLine(this.x, this.y, x_end, y_end);
+    }
+
+    @Override
+    public String toString() {
+        return "Линия";
     }
 }
